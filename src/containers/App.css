@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Consequences' ;
+    font-style: normal;
+    font-weight: normal;
+    src:url('http://www.fontsaddict.com/fontface/Consequences.ttf');
+}
+
+h1 {
+ font-family: 'Consequences';   
+ font-weight: 200;
+ color:#0ccac4;
+}
