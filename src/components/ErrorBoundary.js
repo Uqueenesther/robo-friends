@@ -2,24 +2,24 @@
 import React, {Component} from 'react';
 
 class ErrorBoundary extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             hasError: false
         }
     }
-}
- 
-componentDidCatch(error, info) {
-    this.setState({ hasError: true })
-}
 
-render() {
-    if (this.state.hasError) {
-        return <h1> Ooooops. That is not good</h1>
+ 
+    componentDidCatch(error, info) {
+        this.setState({ hasError: true })
     }
 
-    return this.props.children
+    render() {
+        if (this.state.hasError){
+            return <h1>Ooooops. Error here</h1>
+        }
+        return this.props.children
+    }
 }
 
 export default ErrorBoundary;
